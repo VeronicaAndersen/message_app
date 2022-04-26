@@ -25,7 +25,7 @@ const ChatFeed = (props) => {
                         }
                     </div>
                     <div className='read-receipts' style={{ marginRigt: isMyMessage ? '18px' : '0px', marginLeft: MyMessage ? '0px' : '18px' }}>
-                        read-rexeipts
+                        read-receipts
                     </div>
                 </div>
             )
@@ -38,7 +38,7 @@ const ChatFeed = (props) => {
             <div className="chat-title-container">
                 <div className="chat-title">{chat?.title} </div>
                 <div className='chat-subtitle'>
-                    {CharacterData.people.map((person) => `${person.person.username}`)}
+                    {chat.people.map((person) => `${person.person.username}`)}
                 </div>
             </div>
             {renderMessages()}
