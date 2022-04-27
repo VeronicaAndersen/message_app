@@ -1,3 +1,4 @@
+import React from 'react'
 import { ChatEngine } from 'react-chat-engine';
 import LoginForm from './components/LoginForm';
 import './App.css';
