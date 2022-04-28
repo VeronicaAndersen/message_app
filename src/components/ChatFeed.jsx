@@ -9,7 +9,7 @@ const ChatFeed = (props) => {
     const chat = chats && chats[activeChat];
 
     const renderReadReceipt = (message, isMyMessage) => {
-        return chat.people.map((person, index) => person.last_read === message.is && (
+        return chat.people.map((person, index) => person.last_read === message.id && (
             <div
                 key={`read_${index}`}
                 className="read-receipt"
